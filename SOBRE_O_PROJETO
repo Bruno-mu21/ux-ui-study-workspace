@@ -1,0 +1,22 @@
+## Sobre o projeto
+
+Workspace de estudos para a **Formação UX Designer da DIO**, organizado em um plano
+de 30 dias. O repositório reúne o resumo do plano, um cronograma diário com
+entregáveis, um modelo de anotações semanais e uma curadoria de recursos
+complementares. A ideia é transformar o PDF do plano em arquivos que dá para
+seguir, versionar e atualizar no dia a dia.
+
+## Por que usei o Aider
+
+O Aider é um assistente de IA que roda no terminal e cria os arquivos direto na
+pasta do projeto. Usei porque:
+
+- **Gera os arquivos prontos.** Em vez de copiar e colar a resposta de um chat,
+  o Aider criou `README.md`, `cronograma.md`, `recursos.md` e a pasta `anotacoes/`
+  de uma vez.
+- **Permite usar modelos gratuitos.** Ele se conecta ao OpenRouter, então rodei
+  com um modelo free e o custo da sessão ficou irrisório.
+- **Combina com o fluxo de Git.** Os arquivos nascem na pasta do projeto e vão
+  direto para o repositório.
+- **Serve como experimento.** Foi uma forma de praticar o uso de IA no terminal
+  numa tarefa pequena e de resultado fácil de conferir.
