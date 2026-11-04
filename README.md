@@ -1,40 +1,54 @@
-🎨 Plano de Estudos Intensivo: Formação UX Designer (DIO) — 30 Dias
+## 🤖 Como este projeto foi criado (Aider + IA)
 
-Workspace de estudos para concluir a Formação UX Designer da DIO em 30 dias, com cronograma diário, anotações semanais e curadoria de recursos complementares.
+Os arquivos deste repositório foram gerados a partir do PDF do plano de estudos
+usando o **[Aider](https://aider.chat)**, um assistente de IA que roda no terminal
+e cria ou edita arquivos diretamente na pasta do projeto.
 
-Mostrar Imagem Mostrar Imagem Mostrar Imagem Mostrar Imagem
+### Ambiente
+| Item | Valor |
+| :--- | :--- |
+| Ferramenta | Aider v0.86.2 |
+| Modelo | `nvidia/nemotron-3-ultra-550b-a55b:free` via OpenRouter |
+| Formato de edição | `whole` (o modelo devolve o arquivo inteiro) |
+| Repositório Git | Nenhum no momento da geração (pasta local) |
+| Custo reportado | ~US$ 0,03 na sessão |
 
-🎯 Objetivo Geral
+### Passo a passo
 
-Concluir a Formação UX Designer da DIO em 30 dias, dominando fundamentos de experiência do usuário, arquitetura da informação, wireframing, design systems, prototipagem avançada no Figma e estratégias de posicionamento no mercado.
+1. **Configuração.** O primeiro login no OpenRouter pelo Aider falhou. Depois de
+   listar os modelos disponíveis (`aider --list-models openrouter/`), a sessão foi
+   aberta indicando o modelo direto:
+   `aider --model openrouter/nvidia/nemotron-3-ultra-550b-a55b:free`
+2. **Teste de conexão.** Uma mensagem inicial confirmou que o modelo respondia em
+   português.
+3. **Pedido principal.** Pedi para "materializar" o plano de estudos, criando:
+   `README.md`, `cronograma.md`, `anotacoes/semana-01.md` (modelo para duplicar)
+   e `recursos.md`, explicando a estrutura antes de executar.
+4. **Contexto faltando.** O modelo não consegue ler o PDF sozinho e pediu o
+   conteúdo. Colei o texto do PDF no chat.
+5. **Geração.** Com o texto em mãos, o modelo gerou os quatro arquivos, expandindo
+   o resumo do PDF em cronograma diário (30 dias), entregáveis por semana e
+   curadoria de recursos.
+6. **Aplicação.** O Aider perguntou "Create new file?" para cada arquivo e eu
+   confirmei com `y`.
+7. **Revisão manual.** Depois conferi o resultado e ajustei o que precisava
+   (README completo, links, estrutura).
 
-📅 Cronograma Resumido
-Semana	Período	Foco Principal	Entregável-Chave
-1	Dias 1–7	Fundamentos de UX & Arquitetura da Informação	Conceitos assimilados; organização lógica de dados praticada
-2	Dias 8–14	UX/UI Design, Wireframing de Média Fidelidade & Design System	Wireframes de média fidelidade + Guia de Estilos (Cores/Tipografia)
-3	Dias 15–21	Figma Avançado & Prototipagem Mobile Navegável	Protótipo mobile navegável completo (frames, componentes, interações)
-4	Dias 22–30	Consolidação, Mercado & Projeto Final Integrador	Projeto Final Polido submetido na plataforma DIO
+### Prompt principal utilizado
 
-O roteiro dia a dia, com atividades e checkpoints, está em cronograma.md.
+> Materialize esse plano nesta pasta criando:
+> 1. README.md com o resumo do plano
+> 2. cronograma.md com o roteiro semanal (semanas 1 a 4)
+> 3. uma pasta "anotacoes" com um modelo "semana-01.md" para eu duplicar
+> 4. recursos.md com os materiais separados por semana
+>
+> Antes de criar, me explique brevemente sua estrutura. Depois execute.
 
-🛠️ Stack & Ferramentas
-Design & Prototipagem: Figma (foco principal)
-Conceitos: UX Research, Arquitetura da Informação, UI Design, Design Systems, Acessibilidade, Design Thinking
-Entrega: Plataforma DIO (Desafio de Projeto Final)
-📂 Estrutura do Workspace
-.
-├── README.md        # Visão geral do plano (este arquivo)
-├── cronograma.md    # Roteiro diário detalhado (Dias 1–30)
-├── recursos.md      # Materiais complementares organizados por semana
-└── anotacoes/
-    └── semana-01.md # Template de anotações (duplicar para as semanas 2, 3 e 4)
-✅ Como Usar
-Siga o cronograma.md para a rotina diária.
-Consulte o recursos.md para materiais de apoio além da plataforma DIO.
-Use a pasta anotacoes/ para registrar aprendizados, dúvidas e decisões de design (duplique semana-01.md para semana-02.md, e assim por diante).
-Ao final da Semana 4, tenha o protótipo final pronto para submissão no desafio da DIO.
-💡 Princípios do Plano
-Consistência > Intensidade: 2–3h focadas por dia rendem mais que 10h num único dia.
-Documentação contínua: escreva o case study durante o processo, não só no final.
-Design system vivo: atualize componentes e estilos enquanto desenha as telas.
-Entrega feita > perfeita: submeta no Dia 26 e itere depois no portfólio público.
+### Lições aprendidas
+- O Aider não lê PDF automaticamente: é preciso colar o texto no chat.
+- Pedir "explique a estrutura antes de executar" ajuda a validar o plano antes
+  de criar arquivos.
+- Conteúdo gerado por IA precisa de revisão. Os links do `recursos.md`, por
+  exemplo, devem ser conferidos um a um.
+- Nos arquivos Markdown, os blocos de código (como a árvore de pastas) podem
+  confundir o formato `whole` do Aider (veja o problema abaixo).
